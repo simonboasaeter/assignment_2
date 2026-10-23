@@ -59,7 +59,7 @@
       </template>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer, contains site disclaimer -->
     <footer class="site-footer">
       <div class="site-footer__container">
         <p class="site-footer__disclaimer">
@@ -70,7 +70,12 @@
       </div>
     </footer>
 
+    <!-- Script to dynamically generate player cards, based on the template defined in the HTML -->
     <script>
+      /**
+       * Array of player objects, each containing information about a player.
+       * I went for this solution to avoid hardcoding the player cards directly in the HTML. Unnecessary repetition.
+       */
       const players = [
         {
           name: "Mathias Dyngeland",
@@ -290,6 +295,10 @@
         },
       ];
 
+      /**
+       * Squad__container and player card template gets selected, then we loop through the players array to
+       * set the content of each player card based on the player data and append at end.
+       */
       const squadContainer = document.querySelector(".squad__container");
       const template = document.querySelector("#player-card-template");
 
