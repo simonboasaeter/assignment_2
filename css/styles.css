@@ -112,7 +112,7 @@ p {
 
 .squad__container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 2rem;
   justify-content: center;
 }
@@ -199,4 +199,32 @@ p {
 
 .site-footer__disclaimer {
   color: var(--color-white);
+}
+
+/** Tablet Styles **/
+@media (max-width: 1200px) {
+  .squad__container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .hero__container {
+    margin: 1rem;
+  }
+}
+
+/** Mobile Styles **/
+@media (max-width: 768px) {
+  .squad__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .squad__player-name {
+    font-size: 1.5rem;
+  }
+
+  .squad__player-image {
+    height: 180px;
+  }
 }
