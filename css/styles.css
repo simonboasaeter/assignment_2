@@ -106,11 +106,14 @@ p {
   background-color: #a50d25;
 }
 
-.squad__container {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 250px));
-  gap: 2rem;
+.squad {
   padding: 2rem 5%;
+}
+
+.squad__container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 250px));
+  gap: 2rem;
 }
 
 /** Player Card Styles **/
@@ -120,6 +123,8 @@ p {
   border: 1px solid #e5e5e5;
   border-radius: 0.5rem;
   overflow: hidden;
+  width: 100%;
+  max-width: 250px;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
