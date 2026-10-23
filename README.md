@@ -4,6 +4,10 @@
 <a href="https://github.com/simonboasaeter/assignment_2">Link to Github</a> <br />
 <a href="https://kristiania-sb-assignment-2.netlify.app/">Link to netlify deployment</a>
 
+<p>Notice. I was unsure whether JavaScript was allowed for this assignment, as the requirements states "Use only HTML for structure and CSS for styling (no additional libraries)". 
+To avoid repeating the same HTML structure for every player card, I decided to use a small amount of vanilla JavaScript.
+</p>
+
 <blockquote>
 Note. This is a student project created
 for educational purposes and is not an official or affiliated website.
