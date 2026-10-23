@@ -174,8 +174,7 @@ p {
 }
 
 .squad__player-nationality,
-.squad__player-birthdate,
-.squad__player-height {
+.squad__player-birthdate {
   font-size: 0.875rem;
   color: #555555;
   margin: 3px 0px;
